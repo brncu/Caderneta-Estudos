@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Caderneta de Estudos — Banco do Brasil</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+  body { font-family: 'IBM Plex Sans', sans-serif; }
+  .font-mono-ibm { font-family: 'IBM Plex Mono', monospace; }
+  #app::-webkit-scrollbar, .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { scrollbar-width: none; }
+</style>
+</head>
+<body class="bg-[#EFF2F7] text-[#1B2333] min-h-screen">
+<div id="app"></div>
+
+<script type="module">
+import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
+
+/* ============================================================
+   CONFIGURAÇÃO — troque pelos dados do SEU projeto Supabase.
+   Pegue em: Project Settings > API (use a chave "anon public",
+   NUNCA a "service_role" aqui — esta é só para o script Python).
+   ============================================================ */
+const SUPABASE_CONFIG = {
+  url: 'https://SEU-PROJETO.supabase.co',
+  anonKey: 'SUA-ANON-PUBLIC-KEY',
+};
+/* ============================================================ */
+
+const isConfigured = !SUPABASE_CONFIG.url.includes('SEU-PROJETO')
+  && !SUPABASE_CONFIG.anonKey.includes('SUA-ANON-PUBLIC-KEY');
+const client = isConfigured ? createClient(SUPABASE_CONFIG.url, SUPABASE_CONFIG.anonKey) : null;
+
+const state = {
+  session: null,
+  profile: null,
+  sessions: [],
+  attempts: [],
+  quiz: null,
+};
+
+let authMode = 'signin';
+let disciplinesCache = [];
+let evolutionChart = null;
+let disciplineChart = null;
+
+const root = document.getElementById('app');
+
+/* ---------------- helpers ---------------- */
+
+function escapeHtml(value) {
+  return String(value == null ? '' : value)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
+function formatMinutes(total) {
+  const h = Math.floor(total / 60);
+  const m = total % 60;
+  if (h === 0) return `${m}min`;
+  if (m === 0) return `${h}h`;
+  return `${h}h ${m}min`;
+}
+
+function shuffleArray(arr) {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i -= 1) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+function emptyStateHtml(icon, text) {
+  return `<div class="text-center text-xs text-[#5B6479] py-8 w-full">
+    <i data-lucide="${icon}" class="mx-auto mb-2 opacity-50"></i>${escapeHtml(text)}
+  </div>`;
+}
+
+function logoMarkHtml(size) {
+  const px = size || 32;
+  const iconPx = Math.round(px * 0.55);
+  return `<div class="rounded-lg flex items-center justify-center flex-shrink-0"
+    style="width:${px}px;height:${px}px;background:linear-gradient(135deg,#14967C 0%,#2E5AEC 100%);">
+    <i data-lucide="book-open" class="text-white" style="width:${iconPx}px;height:${iconPx}px;"></i>
+  </div>`;
+}
+
+function navbarHtml(name) {
+  return `
+    <div style="background:#16213F;" class="px-4 py-3">
+      <div class="max-w-3xl mx-auto flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          ${logoMarkHtml(30)}
+          <span class="text-white font-bold text-sm">Caderneta de Estudos</span>
+        </div>
+        <div class="flex items-center gap-3">
+          <span class="text-[11px] text-[#B7C0D6] hidden sm:inline">${escapeHtml(String(name).split('@')[0])}</span>
+          <button id="btn-signout" class="text-[11px] text-[#B7C0D6] border border-white/20 rounded-lg px-2.5 py-1 hover:bg-white/10">sair</button>
+        </div>
+      </div>
+    </div>`;
+}
+
+/* ---------------- setup banner (Supabase not configured) ---------------- */
+
+function renderSetupBanner() {
+  root.innerHTML = `
+    <div class="min-h-screen flex items-center justify-center p-6">
+      <div class="max-w-md bg-white rounded-2xl shadow-lg p-8 border border-[#E3E7F0]">
+        <div class="mb-4">${logoMarkHtml(44)}</div>
+        <h1 class="text-lg font-bold mb-2">Configure o Supabase primeiro</h1>
+        <p class="text-sm text-[#5B6479] leading-relaxed">
+          Abra o arquivo <code class="bg-[#F2F4F8] px-1 rounded">index.html</code> e preencha o objeto
+          <code class="bg-[#F2F4F8] px-1 rounded">SUPABASE_CONFIG</code> com a URL e a chave
+          <strong>anon public</strong> do seu projeto. O passo a passo completo está no
+          <code class="bg-[#F2F4F8] px-1 rounded">README.md</code>.
+        </p>
+      </div>
+    </div>`;
+  lucide.createIcons();
+}
+
+/* ---------------- auth screen ---------------- */
+
+function renderAuth() {
+  root.innerHTML = `
+    <div class="min-h-screen flex items-center justify-center p-6">
+      <div class="max-w-sm w-full bg-white rounded-2xl shadow-lg p-8 border border-[#E3E7F0]">
+        <div class="flex items-center gap-3 mb-6">
+          ${logoMarkHtml(40)}
+          <div>
+            <div class="font-bold text-[#16213F] leading-tight">Caderneta de Estudos</div>
+            <div class="text-[11px] text-[#5B6479]">Banco do Brasil · Goiânia-GO</div>
+          </div>
+        </div>
+        <div class="flex gap-2 mb-5 text-sm">
+          <button id="tab-signin" class="flex-1 py-2 rounded-lg font-semibold ${authMode === 'signin' ? 'bg-[#2E5AEC] text-white' : 'bg-[#F2F4F8] text-[#5B6479]'}">Entrar</button>
+          <button id="tab-signup" class="flex-1 py-2 rounded-lg font-semibold ${authMode === 'signup' ? 'bg-[#2E5AEC] text-white' : 'bg-[#F2F4F8] text-[#5B6479]'}">Criar conta</button>
+        </div>
+        <form id="auth-form" class="space-y-3">
+          ${authMode === 'signup' ? `
+          <div>
+            <label class="text-xs text-[#5B6479] block mb-1">Nome</label>
+            <input name="fullName" type="text" required class="w-full border border-[#E3E7F0] rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-[#2E5AEC]" />
+          </div>` : ''}
+          <div>
+            <label class="text-xs text-[#5B6479] block mb-1">E-mail</label>
+            <input name="email" type="email" required class="w-full border border-[#E3E7F0] rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-[#2E5AEC]" />
+          </div>
+          <div>
+            <label class="text-xs text-[#5B6479] block mb-1">Senha</label>
+            <input name="password" type="password" required minlength="6" class="w-full border border-[#E3E7F0] rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-[#2E5AEC]" />
+          </div>
+          <div id="auth-message" class="text-xs hidden"></div>
+          <button type="submit" class="w-full bg-[#2E5AEC] text-white rounded-lg py-2.5 text-sm font-semibold">
+            ${authMode === 'signup' ? 'Criar conta' : 'Entrar'}
+          </button>
+        </form>
+      </div>
+    </div>`;
+  lucide.createIcons();
+
+  document.getElementById('tab-signin').onclick = () => { authMode = 'signin'; renderAuth(); };
+  document.getElementById('tab-signup').onclick = () => { authMode = 'signup'; renderAuth(); };
+  document.getElementById('auth-form').onsubmit = handleAuthSubmit;
+}
+
+async function handleAuthSubmit(event) {
+  event.preventDefault();
+  const form = new FormData(event.target);
+  const email = form.get('email');
+  const password = form.get('password');
+  const messageBox = document.getElementById('auth-message');
+  messageBox.classList.add('hidden');
+
+  try {
+    if (authMode === 'signup') {
+      const fullName = form.get('fullName');
+      const { error } = await client.auth.signUp({
+        email, password, options: { data: { full_name: fullName } },
+      });
+      if (error) throw error;
+      messageBox.textContent = 'Conta criada! Se a confirmação por e-mail estiver ativa no seu projeto, confirme antes de entrar.';
+      messageBox.className = 'text-xs text-[#14967C]';
+      messageBox.classList.remove('hidden');
+    } else {
+      const { error } = await client.auth.signInWithPassword({ email, password });
+      if (error) throw error;
+    }
+  } catch (err) {
+    messageBox.textContent = (err && err.message) || 'Não foi possível autenticar.';
+    messageBox.className = 'text-xs text-[#E14C41]';
+    messageBox.classList.remove('hidden');
+  }
+}
+
+/* ---------------- data loading ---------------- */
+
+async function loadUserData() {
+  const userId = state.session.user.id;
+  const [profileRes, sessionsRes, attemptsRes] = await Promise.all([
+    client.from('profiles').select('*').eq('id', userId).maybeSingle(),
+    client.from('study_sessions').select('*').eq('user_id', userId).order('session_date', { ascending: false }),
+    client.from('quiz_attempts').select('*').eq('user_id', userId).order('created_at', { ascending: false }),
+  ]);
+  state.profile = profileRes.data || null;
+  state.sessions = sessionsRes.data || [];
+  state.attempts = attemptsRes.data || [];
+}
+
+async function loadDisciplines() {
+  const { data, error } = await client.from('question_bank').select('discipline').limit(2000);
+  if (error || !data) return [];
+  return [...new Set(data.map((row) => row.discipline))];
+}
+
+/* ---------------- dashboard ---------------- */
+
+async function renderDashboard() {
+  root.innerHTML = `<div class="min-h-screen flex items-center justify-center text-sm text-[#5B6479]">carregando painel…</div>`;
+  await loadUserData();
+  disciplinesCache = await loadDisciplines();
+
+  const totalMinutes = state.sessions.reduce((sum, row) => sum + row.minutes, 0);
+  const weekAgo = new Date();
+  weekAgo.setDate(weekAgo.getDate() - 7);
+  const weekMinutes = state.sessions
+    .filter((row) => new Date(row.session_date) >= weekAgo)
+    .reduce((sum, row) => sum + row.minutes, 0);
+  const goalHours = (state.profile && Number(state.profile.weekly_goal_hours)) || 8;
+  const goalPct = goalHours > 0 ? Math.min(100, Math.round((weekMinutes / (goalHours * 60)) * 100)) : 0;
+  const displayName = (state.profile && state.profile.full_name) || state.session.user.email;
+
+  root.innerHTML = `
+    <div class="min-h-screen">
+      ${navbarHtml(displayName)}
+      <div class="max-w-3xl mx-auto px-4 py-5 space-y-4">
+
+        <div class="rounded-2xl p-5 text-white" style="background:linear-gradient(135deg,#16213F,#253253);">
+          <div class="font-bold mb-3">Bem-vindo(a) de volta, ${escapeHtml(String(displayName).split('@')[0])}!</div>
+          <div class="flex justify-between text-xs text-[#D7DEEC] mb-1">
+            <span>seu progresso nesta semana</span>
+            <span class="font-mono-ibm font-semibold text-white">${goalPct}%</span>
+          </div>
+          <div class="w-full h-1.5 bg-white/20 rounded-full overflow-hidden">
+            <div class="h-full bg-white rounded-full" style="width:${goalPct}%"></div>
+          </div>
+          <div class="text-[11px] text-[#B7C0D6] mt-2">${formatMinutes(weekMinutes)} de ${goalHours}h de meta</div>
+        </div>
+
+        <div>
+          <div class="font-bold text-sm mb-2">matérias disponíveis</div>
+          <div class="flex gap-3 overflow-x-auto no-scrollbar pb-2 -mx-4 px-4">
+            ${disciplinesCache.length === 0
+              ? emptyStateHtml('book-open', 'Nenhuma questão no banco ainda — rode o script de ingestão (veja o README).')
+              : disciplinesCache.map((d) => `
+                <div class="flex-shrink-0 w-36 bg-white rounded-xl border border-[#E3E7F0] p-3 shadow-sm">
+                  <div class="w-7 h-7 rounded-lg mb-2 flex items-center justify-center text-white text-[10px] font-bold font-mono-ibm" style="background:linear-gradient(135deg,#14967C,#2E5AEC);">
+                    ${escapeHtml(d.slice(0, 2).toUpperCase())}
+                  </div>
+                  <div class="text-xs font-semibold leading-snug mb-2 min-h-[32px]">${escapeHtml(d)}</div>
+                  <button data-discipline="${escapeHtml(d)}" class="btn-quiz text-[11px] text-[#2E5AEC] font-semibold">estudar →</button>
+                </div>`).join('')}
+          </div>
+        </div>
+
+        <div>
+          <div class="font-bold text-sm mb-2">simulados disponíveis</div>
+          <div class="flex gap-3 overflow-x-auto no-scrollbar pb-2 -mx-4 px-4">
+            <div class="flex-shrink-0 w-48 bg-white rounded-xl border border-[#E3E7F0] p-4 shadow-sm">
+              <div class="font-bold text-sm mb-1">Simulado geral</div>
+              <div class="text-[11px] text-[#5B6479] mb-3 min-h-[28px]">15 questões de todas as matérias</div>
+              <button data-discipline="" class="btn-quiz w-full bg-[#2E5AEC] text-white rounded-lg py-2 text-xs font-semibold">Fazer simulado</button>
+            </div>
+            ${disciplinesCache.slice(0, 4).map((d) => `
+              <div class="flex-shrink-0 w-48 bg-white rounded-xl border border-[#E3E7F0] p-4 shadow-sm">
+                <div class="font-bold text-sm mb-1">${escapeHtml(d)}</div>
+                <div class="text-[11px] text-[#5B6479] mb-3 min-h-[28px]">10 questões desta matéria</div>
+                <button data-discipline="${escapeHtml(d)}" class="btn-quiz w-full bg-[#F2F4F8] text-[#1B2333] rounded-lg py-2 text-xs font-semibold">Fazer simulado</button>
+              </div>`).join('')}
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl border border-[#E3E7F0] shadow-sm p-4">
+          <div class="font-bold text-sm mb-1">horas estudadas</div>
+          <div class="text-3xl font-extrabold">${formatMinutes(totalMinutes)}</div>
+          <div class="text-xs text-[#5B6479] mb-3">total registrado</div>
+          <div id="add-session-toggle" class="text-xs text-[#2E5AEC] font-semibold cursor-pointer">+ registrar sessão de estudo</div>
+          <form id="add-session-form" class="hidden mt-3 space-y-2">
+            <div class="flex gap-2">
+              <select name="discipline" class="flex-1 border border-[#E3E7F0] rounded-lg px-2 py-1.5 text-xs">
+                ${disciplinesCache.map((d) => `<option value="${escapeHtml(d)}">${escapeHtml(d)}</option>`).join('')}
+              </select>
+              <input name="minutes" type="number" min="1" placeholder="minutos" required class="w-24 border border-[#E3E7F0] rounded-lg px-2 py-1.5 text-xs" />
+            </div>
+            <button type="submit" class="w-full bg-[#14967C] text-white rounded-lg py-1.5 text-xs font-semibold">salvar sessão</button>
+          </form>
+        </div>
+
+        <div class="bg-white rounded-2xl border border-[#E3E7F0] shadow-sm p-4">
+          <div class="font-bold text-sm mb-2">evolução nos simulados</div>
+          <div style="height:160px;"><canvas id="chart-evolution"></canvas></div>
+        </div>
+
+        <div class="bg-white rounded-2xl border border-[#E3E7F0] shadow-sm p-4">
+          <div class="font-bold text-sm mb-2">acerto por disciplina</div>
+          <div style="height:160px;"><canvas id="chart-discipline"></canvas></div>
+        </div>
+
+      </div>
+    </div>`;
+
+  lucide.createIcons();
+  wireDashboardEvents();
+  renderCharts();
+}
+
+function wireDashboardEvents() {
+  document.querySelectorAll('.btn-quiz').forEach((btn) => {
+    btn.onclick = () => startQuiz(btn.dataset.discipline || null);
+  });
+
+  const toggle = document.getElementById('add-session-toggle');
+  const form = document.getElementById('add-session-form');
+  if (toggle && form) {
+    toggle.onclick = () => form.classList.toggle('hidden');
+    form.onsubmit = async (event) => {
+      event.preventDefault();
+      const fd = new FormData(event.target);
+      await client.from('study_sessions').insert({
+        user_id: state.session.user.id,
+        discipline: fd.get('discipline'),
+        minutes: parseInt(fd.get('minutes'), 10),
+        session_date: new Date().toISOString().slice(0, 10),
+      });
+      renderDashboard();
+    };
+  }
+}
+
+function chartOptionsBase() {
+  return {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: { legend: { display: false } },
+    scales: {
+      y: { min: 0, max: 100, ticks: { callback: (v) => `${v}%`, font: { size: 10 } }, grid: { color: '#E3E7F0' } },
+      x: { grid: { display: false }, ticks: { font: { size: 10 } } },
+    },
+  };
+}
+
+function renderCharts() {
+  if (evolutionChart) { evolutionChart.destroy(); evolutionChart = null; }
+  if (disciplineChart) { disciplineChart.destroy(); disciplineChart = null; }
+
+  const evoCanvas = document.getElementById('chart-evolution');
+  const chronological = [...state.attempts].reverse();
+  if (evoCanvas && chronological.length > 0) {
+    evolutionChart = new Chart(evoCanvas, {
+      type: 'line',
+      data: {
+        labels: chronological.map((_, i) => `#${i + 1}`),
+        datasets: [{
+          data: chronological.map((a) => Math.round((a.score / a.total) * 100)),
+          borderColor: '#2E5AEC',
+          backgroundColor: 'rgba(46,90,236,0.08)',
+          fill: true,
+          tension: 0.35,
+          pointRadius: 3,
+        }],
+      },
+      options: chartOptionsBase(),
+    });
+  } else if (evoCanvas) {
+    evoCanvas.parentElement.innerHTML = emptyStateHtml('trending-up', 'Faça seu primeiro simulado para ver sua evolução aqui.');
+    lucide.createIcons();
+  }
+
+  const discCanvas = document.getElementById('chart-discipline');
+  const byDiscipline = {};
+  state.attempts.forEach((a) => {
+    if (!a.discipline) return;
+    if (!byDiscipline[a.discipline]) byDiscipline[a.discipline] = { sum: 0, count: 0 };
+    byDiscipline[a.discipline].sum += (a.score / a.total) * 100;
+    byDiscipline[a.discipline].count += 1;
+  });
+  const labels = Object.keys(byDiscipline);
+  if (discCanvas && labels.length > 0) {
+    disciplineChart = new Chart(discCanvas, {
+      type: 'bar',
+      data: {
+        labels: labels.map((l) => (l.length > 10 ? `${l.slice(0, 10)}…` : l)),
+        datasets: [{
+          data: labels.map((l) => Math.round(byDiscipline[l].sum / byDiscipline[l].count)),
+          backgroundColor: '#14967C',
+          borderRadius: 4,
+        }],
+      },
+      options: chartOptionsBase(),
+    });
+  } else if (discCanvas) {
+    discCanvas.parentElement.innerHTML = emptyStateHtml('help-circle', 'Faça simulados por matéria para comparar seu desempenho aqui.');
+    lucide.createIcons();
+  }
+}
+
+/* ---------------- quiz ---------------- */
+
+async function startQuiz(discipline) {
+  let query = client.from('question_bank').select('*').limit(300);
+  if (discipline) query = query.eq('discipline', discipline);
+  const { data, error } = await query;
+
+  if (error || !data || data.length === 0) {
+    alert('Não foi possível carregar questões. Confira se o script de ingestão já rodou (veja o README).');
+    return;
+  }
+
+  const picked = shuffleArray(data).slice(0, discipline ? 10 : 15);
+  state.quiz = {
+    discipline, questions: picked, index: 0, score: 0, selected: null, finished: false,
+  };
+  renderQuiz();
+}
+
+function renderQuiz() {
+  const quiz = state.quiz;
+  const displayName = (state.profile && state.profile.full_name) || state.session.user.email;
+
+  if (quiz.finished) {
+    const pct = Math.round((quiz.score / quiz.questions.length) * 100);
+    root.innerHTML = `
+      <div class="min-h-screen">
+        ${navbarHtml(displayName)}
+        <div class="max-w-md mx-auto px-4 py-10">
+          <div class="bg-white rounded-2xl border border-[#E3E7F0] shadow-sm p-8 text-center">
+            <i data-lucide="award" class="mx-auto mb-3" style="color:#E0983A;width:32px;height:32px;"></i>
+            <div class="text-4xl font-extrabold">${quiz.score}/${quiz.questions.length}</div>
+            <div class="text-sm text-[#5B6479] mb-5">${pct}% de acerto</div>
+            <button id="btn-back-dash" class="w-full bg-[#2E5AEC] text-white rounded-lg py-2.5 text-sm font-semibold">voltar ao painel</button>
+          </div>
+        </div>
+      </div>`;
+    lucide.createIcons();
+    document.getElementById('btn-back-dash').onclick = () => renderDashboard();
+    return;
+  }
+
+  const question = quiz.questions[quiz.index];
+  const optionKeys = Object.keys(question.options);
+
+  root.innerHTML = `
+    <div class="min-h-screen">
+      ${navbarHtml(displayName)}
+      <div class="max-w-md mx-auto px-4 py-6">
+        <div class="flex justify-between text-xs text-[#5B6479] mb-2">
+          <span>questão ${quiz.index + 1} de ${quiz.questions.length}</span>
+          <span class="font-mono-ibm">${quiz.score} acertos</span>
+        </div>
+        <div class="bg-white rounded-2xl border border-[#E3E7F0] shadow-sm p-4">
+          <div class="text-[10px] uppercase tracking-wide text-[#5B6479] font-semibold mb-2">${escapeHtml(question.discipline)}</div>
+          <div class="text-sm mb-4">${escapeHtml(question.statement)}</div>
+          <div id="options-wrap" class="space-y-2">
+            ${optionKeys.map((k) => `
+              <button data-key="${k}" class="opt-btn w-full text-left border-2 border-[#E3E7F0] rounded-lg px-3 py-2.5 text-sm flex gap-2">
+                <span class="font-mono-ibm font-bold text-[#5B6479]">${k}</span><span>${escapeHtml(question.options[k])}</span>
+              </button>`).join('')}
+          </div>
+          <div id="explanation-box" class="hidden mt-3 p-3 bg-[#EFF2F7] rounded-lg text-xs text-[#5B6479]"></div>
+          <button id="btn-next" class="hidden w-full mt-3 bg-[#2E5AEC] text-white rounded-lg py-2.5 text-sm font-semibold">
+            ${quiz.index + 1 < quiz.questions.length ? 'próxima questão' : 'ver resultado'}
+          </button>
+        </div>
+      </div>
+    </div>`;
+  lucide.createIcons();
+
+  document.querySelectorAll('.opt-btn').forEach((btn) => {
+    btn.onclick = () => selectOption(btn.dataset.key, question);
+  });
+}
+
+function selectOption(key, question) {
+  if (state.quiz.selected !== null) return;
+  state.quiz.selected = key;
+  const correct = key === question.correct_answer;
+  if (correct) state.quiz.score += 1;
+
+  document.querySelectorAll('.opt-btn').forEach((btn) => {
+    btn.disabled = true;
+    if (btn.dataset.key === question.correct_answer) {
+      btn.classList.add('border-[#14967C]', 'bg-[#DFF4EF]');
+    } else if (btn.dataset.key === key) {
+      btn.classList.add('border-[#E14C41]', 'bg-[#FCE7E5]');
+    }
+  });
+
+  const box = document.getElementById('explanation-box');
+  box.classList.remove('hidden');
+  box.innerHTML = `<strong class="text-[#1B2333]">${correct ? 'Certinho. ' : 'Não foi dessa vez. '}</strong>${escapeHtml(question.explanation || '')}`;
+
+  const nextBtn = document.getElementById('btn-next');
+  nextBtn.classList.remove('hidden');
+  nextBtn.onclick = async () => {
+    if (state.quiz.index + 1 < state.quiz.questions.length) {
+      state.quiz.index += 1;
+      state.quiz.selected = null;
+      renderQuiz();
+    } else {
+      state.quiz.finished = true;
+      await client.from('quiz_attempts').insert({
+        user_id: state.session.user.id,
+        discipline: state.quiz.discipline,
+        attempt_type: state.quiz.discipline ? 'subject' : 'completo',
+        score: state.quiz.score,
+        total: state.quiz.questions.length,
+      });
+      renderQuiz();
+    }
+  };
+}
+
+/* ---------------- boot ---------------- */
+
+document.addEventListener('click', (event) => {
+  if (event.target && event.target.id === 'btn-signout' && client) {
+    client.auth.signOut();
+  }
+});
+
+async function boot() {
+  if (!isConfigured) {
+    renderSetupBanner();
+    return;
+  }
+
+  const { data: { session } } = await client.auth.getSession();
+  state.session = session;
+
+  client.auth.onAuthStateChange((_event, newSession) => {
+    state.session = newSession;
+    if (newSession) renderDashboard();
+    else renderAuth();
+  });
+
+  if (state.session) {
+    renderDashboard();
+  } else {
+    renderAuth();
+  }
+}
+
+boot();
+</script>
+</body>
+</html>
