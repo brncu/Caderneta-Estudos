@@ -1,0 +1,1220 @@
+[
+  {
+    "discipline": "Língua Portuguesa",
+    "topic": "Língua Portuguesa",
+    "statement": "Assinale a alternativa em que a concordância verbal está de acordo com a norma-padrão.",
+    "options": {
+      "A": "Fazem dois anos que ele trabalha nesta agência.",
+      "B": "Faz dois anos que ele trabalha nesta agência.",
+      "C": "Devem fazer dois anos que ele trabalha aqui.",
+      "D": "Houveram poucos problemas na fila do banco hoje.",
+      "E": "Aluga-se salas comerciais no centro da cidade."
+    },
+    "correct_answer": "B",
+    "explanation": "O verbo \"fazer\" indicando tempo decorrido é impessoal e fica sempre na 3ª pessoa do singular: \"faz dois anos\", nunca \"fazem\" ou \"devem fazer\". O verbo \"haver\" no sentido de existir também é impessoal: o certo seria \"houve poucos problemas\"."
+  },
+  {
+    "discipline": "Língua Portuguesa",
+    "topic": "Língua Portuguesa",
+    "statement": "Assinale a alternativa em que o emprego do acento indicativo de crase está correto.",
+    "options": {
+      "A": "Cheguei à agência às nove horas.",
+      "B": "Entreguei o comprovante à ele.",
+      "C": "O gerente se referiu à vários clientes insatisfeitos.",
+      "D": "Referiu-se à o diretor com respeito.",
+      "E": "Estou à disposição para à ajudar no que for preciso."
+    },
+    "correct_answer": "A",
+    "explanation": "Há crase na fusão da preposição \"a\" com o artigo feminino \"a(s)\": \"à agência\" (a+a) e \"às nove horas\" (a+as) estão corretos. Não há crase antes de pronome pessoal, antes de palavra indefinida sem artigo, antes de palavra masculina (o certo seria \"ao diretor\") nem antes de verbo no infinitivo."
+  },
+  {
+    "discipline": "Língua Portuguesa",
+    "topic": "Língua Portuguesa",
+    "statement": "Assinale a alternativa em que a regência verbal segue a norma-padrão.",
+    "options": {
+      "A": "O gerente assistiu o cliente durante toda a negociação.",
+      "B": "Prefiro investimentos de renda fixa do que ações.",
+      "C": "O correntista aspira a uma vida financeira mais estável.",
+      "D": "Ele namora com a colega do setor de crédito.",
+      "E": "Chegamos no banco alguns minutos atrasados."
+    },
+    "correct_answer": "C",
+    "explanation": "\"Assistir\" (no sentido de auxiliar) e \"aspirar\" (no sentido de desejar) são transitivos indiretos e pedem a preposição \"a\": \"assistir ao cliente\" e \"aspira a uma vida estável\". \"Preferir\" exige \"a\", não \"do que\". \"Namorar\" é transitivo direto (sem \"com\"). E \"chegar\" pede a preposição \"a\", não \"em\"."
+  },
+  {
+    "discipline": "Língua Portuguesa",
+    "topic": "Língua Portuguesa",
+    "statement": "Assinale a alternativa pontuada de acordo com a norma-padrão.",
+    "options": {
+      "A": "Os clientes que possuem conta poupança, recebem rendimento mensal.",
+      "B": "Os clientes que possuem conta poupança recebem rendimento mensal.",
+      "C": "O gerente, informou que a taxa de juros subiu.",
+      "D": "Assim, que o prazo terminar, o contrato será renovado.",
+      "E": "Antes de assinar o contrato o cliente, deve ler todas as cláusulas."
+    },
+    "correct_answer": "B",
+    "explanation": "Não se separa o sujeito do predicado por vírgula (erro presente nas demais alternativas). A oração restritiva \"que possuem conta poupança\" não deve vir isolada por vírgulas, pois restringe o sentido de \"clientes\". E locuções como \"assim que\" não se separam internamente por vírgula."
+  },
+  {
+    "discipline": "Língua Portuguesa",
+    "topic": "Língua Portuguesa",
+    "statement": "Assinale a alternativa correta quanto à colocação do pronome átono, segundo a norma-padrão.",
+    "options": {
+      "A": "Me disseram que a taxa de juros havia mudado.",
+      "B": "Disseram-me que a taxa de juros havia mudado.",
+      "C": "Nunca disseram-me a verdade sobre as tarifas.",
+      "D": "Encontrarei-me com o gerente na próxima semana.",
+      "E": "Jamais avisou-me sobre a mudança na taxa."
+    },
+    "correct_answer": "B",
+    "explanation": "No início do período, sem palavra atrativa antes, a norma-padrão pede ênclise (\"Disseram-me\"), não próclise. Advérbios de negação como \"nunca\" e \"jamais\" são palavras atrativas e exigem próclise obrigatória: o certo seria \"nunca me disseram\" e \"jamais me avisou\". No futuro do presente, sem palavra atrativa, usa-se mesóclise: \"encontrar-me-ei\"."
+  },
+  {
+    "discipline": "Língua Portuguesa",
+    "topic": "Língua Portuguesa",
+    "statement": "Assinale a alternativa em que a concordância nominal está correta, segundo a norma-padrão.",
+    "options": {
+      "A": "A gerente ficou meia preocupada com os números do trimestre.",
+      "B": "A gerente ficou meio preocupada com os números do trimestre.",
+      "C": "A gerente ficou meios preocupada com os números do trimestre.",
+      "D": "A gerente ficou meias preocupada com os números do trimestre.",
+      "E": "A gerentes ficou meio preocupada com os números do trimestre."
+    },
+    "correct_answer": "B",
+    "explanation": "\"Meio\" antes de adjetivo funciona como advérbio (equivalendo a \"um pouco\") e por isso é invariável: \"meio preocupada\", nunca \"meia\", \"meios\" ou \"meias\". Diferente de quando \"meio\" é numeral: \"meia dúzia\", \"duas horas e meia\"."
+  },
+  {
+    "discipline": "Língua Portuguesa",
+    "topic": "Língua Portuguesa",
+    "statement": "Assinale a alternativa em que o emprego de \"por que\" / \"porque\" / \"por quê\" / \"porquê\" está de acordo com a norma-padrão.",
+    "options": {
+      "A": "O caixa fechou mais cedo, porque houve um problema no sistema.",
+      "B": "Você sabe por quê o caixa fechou mais cedo?",
+      "C": "Ele não foi ao banco, porquê estava sem tempo.",
+      "D": "Qual o porque da demora?",
+      "E": "Ele explicou o motivo, mas não disse por que."
+    },
+    "correct_answer": "A",
+    "explanation": "\"Porque\" (junto, sem acento) tem valor explicativo/causal e liga orações — o emprego correto em respostas e explicações. \"Por que\" (separado) é usado em perguntas diretas ou indiretas. \"Por quê\" (separado, com acento) aparece no fim de frase ou isolado. \"Porquê\" (junto, com acento) é substantivo, geralmente precedido de artigo: \"o porquê\"."
+  },
+  {
+    "discipline": "Língua Portuguesa",
+    "topic": "Língua Portuguesa",
+    "statement": "Assinale a alternativa correta quanto ao emprego de \"há\" e \"a\" (indicando tempo).",
+    "options": {
+      "A": "O banco foi fundado a mais de 200 anos.",
+      "B": "O banco foi fundado há mais de 200 anos.",
+      "C": "A promoção é válida daqui há dois meses.",
+      "D": "Ele trabalha no banco a três anos.",
+      "E": "Voltarei ao banco daqui há uma semana, para renovar o contrato."
+    },
+    "correct_answer": "B",
+    "explanation": "\"Há\" (verbo haver) indica tempo decorrido/passado: \"há mais de 200 anos\" equivale a \"faz mais de 200 anos\". \"A\" (preposição) indica tempo futuro, geralmente após \"daqui\": \"daqui a dois meses\". As demais alternativas trocam esse uso."
+  },
+  {
+    "discipline": "Língua Portuguesa",
+    "topic": "Língua Portuguesa",
+    "statement": "Leia o trecho a seguir: \"O gerente informou aos clientes que, embora as taxas tivessem subido no último trimestre, os investimentos em renda fixa continuavam sendo a opção mais segura para quem buscava previsibilidade.\" De acordo com o trecho, é correto afirmar que:",
+    "options": {
+      "A": "As taxas caíram no último trimestre.",
+      "B": "Os investimentos em renda fixa deixaram de ser seguros.",
+      "C": "Apesar do aumento das taxas, a renda fixa seguia sendo indicada a quem valoriza previsibilidade.",
+      "D": "O gerente recomendou que os clientes evitassem qualquer tipo de investimento.",
+      "E": "A previsibilidade deixou de ser um critério relevante para os investidores."
+    },
+    "correct_answer": "C",
+    "explanation": "O trecho afirma que, mesmo com a alta das taxas, a renda fixa \"continuava sendo a opção mais segura para quem buscava previsibilidade\" — exatamente o que a alternativa C parafraseia. As demais contrariam ou extrapolam o que foi dito no texto."
+  },
+  {
+    "discipline": "Língua Portuguesa",
+    "topic": "Língua Portuguesa",
+    "statement": "Na frase \"O cliente esperava que o empréstimo fosse aprovado rapidamente\", a oração destacada classifica-se como:",
+    "options": {
+      "A": "Oração subordinada adjetiva restritiva",
+      "B": "Oração subordinada substantiva objetiva direta",
+      "C": "Oração coordenada assindética",
+      "D": "Oração subordinada adverbial causal",
+      "E": "Oração subordinada substantiva subjetiva"
+    },
+    "correct_answer": "B",
+    "explanation": "A oração \"que o empréstimo fosse aprovado rapidamente\" completa o sentido do verbo \"esperava\", funcionando como objeto direto dele — por isso é uma oração subordinada substantiva objetiva direta."
+  },
+  {
+    "discipline": "Língua Portuguesa",
+    "topic": "Língua Portuguesa",
+    "statement": "Assinale a alternativa que apresenta ambiguidade, um problema a ser evitado na norma-padrão em textos técnicos e formais.",
+    "options": {
+      "A": "O gerente atendeu o cliente com atenção.",
+      "B": "O gerente informou o cliente sobre a taxa por telefone.",
+      "C": "O diretor pediu ao gerente para revisar seu relatório.",
+      "D": "A agência abre às nove horas.",
+      "E": "O caixa contou o dinheiro rapidamente."
+    },
+    "correct_answer": "C",
+    "explanation": "Em \"pediu ao gerente para revisar seu relatório\", o pronome possessivo \"seu\" pode se referir tanto ao diretor quanto ao gerente, gerando ambiguidade — um vício de linguagem a ser evitado, especialmente em textos técnicos e objetivos."
+  },
+  {
+    "discipline": "Língua Portuguesa",
+    "topic": "Língua Portuguesa",
+    "statement": "Assinale a alternativa em que a concordância verbal está de acordo com a norma-padrão.",
+    "options": {
+      "A": "Mais de um cliente reclamaram da demora no atendimento.",
+      "B": "Mais de um cliente reclamou da demora no atendimento.",
+      "C": "Mais de três clientes reclamou da demora no atendimento.",
+      "D": "Menos de dez clientes aprovou o novo aplicativo do banco.",
+      "E": "Mais de cinco clientes reclamou da demora no atendimento."
+    },
+    "correct_answer": "B",
+    "explanation": "A expressão \"mais de um\" seguida de substantivo no singular exige, via de regra, verbo no singular: \"mais de um cliente reclamou\". Já com numeral igual ou maior que dois (\"mais de três\", \"menos de dez\", \"mais de cinco\"), o verbo vai para o plural."
+  },
+  {
+    "discipline": "Língua Portuguesa",
+    "topic": "Língua Portuguesa",
+    "statement": "Assinale a alternativa em que o emprego do pronome relativo \"cujo\" está correto, segundo a norma-padrão.",
+    "options": {
+      "A": "O cliente cujo o cartão foi bloqueado ligou para a central.",
+      "B": "O cliente cujo cartão foi bloqueado ligou para a central.",
+      "C": "O cliente, o cujo cartão foi bloqueado, ligou para a central.",
+      "D": "O cliente que seu cartão foi bloqueado ligou para a central.",
+      "E": "O cliente cujo cartão, foi bloqueado ligou para a central."
+    },
+    "correct_answer": "B",
+    "explanation": "\"Cujo\" e suas flexões indicam posse e concordam com o substantivo que vem depois deles (o objeto possuído) — nunca vêm acompanhados de artigo. O correto é \"cujo cartão foi bloqueado\", sem \"o\" antes de \"cartão\" e sem vírgulas indevidas."
+  },
+  {
+    "discipline": "Língua Portuguesa",
+    "topic": "Língua Portuguesa",
+    "statement": "Assinale a alternativa em que o termo destacado está empregado de acordo com o sentido correto, no contexto bancário.",
+    "options": {
+      "A": "O cliente foi à SEÇÃO de crédito imobiliário para tirar dúvidas.",
+      "B": "O cliente foi à CESSÃO de crédito imobiliário para tirar dúvidas.",
+      "C": "O cliente foi à SESSÃO de crédito imobiliário para tirar dúvidas.",
+      "D": "O banco fez a CEIÇÃO dos direitos do contrato para outra instituição.",
+      "E": "O gerente pediu para RATIFICAR os dados cadastrais incorretos do cliente."
+    },
+    "correct_answer": "A",
+    "explanation": "\"Seção\" é a divisão/departamento de um órgão ou empresa — o termo certo para um setor do banco. \"Sessão\" se refere a uma reunião ou período de tempo. \"Cessão\" é o ato de ceder, transferir algo. E \"retificar\" (corrigir) não deve ser confundido com \"ratificar\" (confirmar) — a palavra \"ceição\" nem existe."
+  },
+  {
+    "discipline": "Língua Inglesa",
+    "topic": "Língua Inglesa",
+    "statement": "No contexto bancário, qual a tradução mais adequada para \"withdrawal\"?",
+    "options": {
+      "A": "Depósito",
+      "B": "Saque",
+      "C": "Empréstimo",
+      "D": "Transferência",
+      "E": "Investimento"
+    },
+    "correct_answer": "B",
+    "explanation": "\"Withdrawal\" significa \"saque\", ou seja, a retirada de dinheiro de uma conta. \"Deposit\" é depósito, e \"loan\" é empréstimo."
+  },
+  {
+    "discipline": "Língua Inglesa",
+    "topic": "Língua Inglesa",
+    "statement": "Complete corretamente: \"The customer ____ to open a new account yesterday.\"",
+    "options": {
+      "A": "want",
+      "B": "wants",
+      "C": "wanted",
+      "D": "is wanting",
+      "E": "has want"
+    },
+    "correct_answer": "C",
+    "explanation": "\"Yesterday\" indica uma ação concluída no passado, exigindo o Simple Past. A forma correta do verbo \"want\" no passado é \"wanted\"."
+  },
+  {
+    "discipline": "Língua Inglesa",
+    "topic": "Língua Inglesa",
+    "statement": "Assinale o par de antônimos correto no vocabulário bancário em inglês.",
+    "options": {
+      "A": "Deposit / Withdrawal",
+      "B": "Loan / Interest",
+      "C": "Account / Balance",
+      "D": "Credit / Card",
+      "E": "Branch / Bank"
+    },
+    "correct_answer": "A",
+    "explanation": "\"Deposit\" (depositar) e \"withdrawal\" (saque) são opostos: um coloca dinheiro na conta, o outro retira. Os demais pares são conceitos relacionados, não opostos."
+  },
+  {
+    "discipline": "Língua Inglesa",
+    "topic": "Língua Inglesa",
+    "statement": "Which sentence uses the modal verb correctly to express an obligation?",
+    "options": {
+      "A": "Customers should to bring an ID document.",
+      "B": "Customers must bring an ID document.",
+      "C": "Customers musts bring an ID document.",
+      "D": "Customers can bring an ID document, if they must.",
+      "E": "Customers must to bring an ID document."
+    },
+    "correct_answer": "B",
+    "explanation": "Modal verbs like \"must\" and \"should\" are followed directly by the base form of the verb, without \"to\". \"Must\" expresses a strong obligation: \"Customers must bring an ID document.\""
+  },
+  {
+    "discipline": "Língua Inglesa",
+    "topic": "Língua Inglesa",
+    "statement": "What is the correct English term for \"taxa de juros\"?",
+    "options": {
+      "A": "Interest rate",
+      "B": "Interested rate",
+      "C": "Rate of interested",
+      "D": "Tax rate",
+      "E": "Currency rate"
+    },
+    "correct_answer": "A",
+    "explanation": "\"Interest rate\" is the standard English term for \"taxa de juros\". \"Tax rate\" means \"taxa de imposto\", a different concept, and the other options are not correct English expressions."
+  },
+  {
+    "discipline": "Língua Inglesa",
+    "topic": "Língua Inglesa",
+    "statement": "In banking English, what does \"overdraft\" mean?",
+    "options": {
+      "A": "A type of savings account with high interest.",
+      "B": "The amount by which withdrawals exceed the available balance in an account.",
+      "C": "A fee charged for opening a new account.",
+      "D": "A document proving someone's income.",
+      "E": "A type of investment fund."
+    },
+    "correct_answer": "B",
+    "explanation": "\"Overdraft\" refers to a situation where withdrawals from a bank account exceed the available balance, resulting in a negative balance — similar to the Portuguese term \"cheque especial\" or \"saldo negativo\"."
+  },
+  {
+    "discipline": "Língua Inglesa",
+    "topic": "Língua Inglesa",
+    "statement": "Choose the correct comparative sentence: \"This savings account offers a ____ interest rate than that one.\"",
+    "options": {
+      "A": "higher",
+      "B": "more high",
+      "C": "highest",
+      "D": "high",
+      "E": "more higher"
+    },
+    "correct_answer": "A",
+    "explanation": "For short adjectives like \"high\", the comparative form is made by adding \"-er\": \"higher\". \"More high\" and \"more higher\" are incorrect, and \"highest\" is the superlative form, used with \"the\" rather than a direct comparison with \"than\"."
+  },
+  {
+    "discipline": "Matemática",
+    "topic": "Matemática",
+    "statement": "Cinco caixas eletrônicos processam, juntos, 800 transações por hora, todos com o mesmo desempenho. Mantendo essa proporção, quantas transações 8 caixas eletrônicos processariam no mesmo período?",
+    "options": {
+      "A": "1.000",
+      "B": "1.120",
+      "C": "1.200",
+      "D": "1.280",
+      "E": "1.600"
+    },
+    "correct_answer": "D",
+    "explanation": "Grandezas diretamente proporcionais. Cada caixa processa 800 ÷ 5 = 160 transações por hora. Logo, 8 caixas processam 8 × 160 = 1.280 transações."
+  },
+  {
+    "discipline": "Matemática",
+    "topic": "Matemática",
+    "statement": "Um cliente aplicou R$ 5.000,00 em um produto que rende 8% ao ano, em regime de juros simples. Qual será o valor total (capital + rendimento) ao final de um ano?",
+    "options": {
+      "A": "R$ 5.080,00",
+      "B": "R$ 5.200,00",
+      "C": "R$ 5.400,00",
+      "D": "R$ 5.500,00",
+      "E": "R$ 5.800,00"
+    },
+    "correct_answer": "C",
+    "explanation": "O rendimento é 8% de R$ 5.000,00 = R$ 400,00. Somando ao capital, o total é R$ 5.000,00 + R$ 400,00 = R$ 5.400,00."
+  },
+  {
+    "discipline": "Matemática",
+    "topic": "Matemática",
+    "statement": "Em uma agência, a razão entre o número de contas pessoa física e pessoa jurídica é de 7 para 2. Se há 180 contas pessoa jurídica, quantas são pessoa física?",
+    "options": {
+      "A": "420",
+      "B": "504",
+      "C": "560",
+      "D": "630",
+      "E": "700"
+    },
+    "correct_answer": "D",
+    "explanation": "Se a razão é 7 para 2, cada \"parte\" corresponde a 180 ÷ 2 = 90. O número de contas pessoa física é 7 × 90 = 630."
+  },
+  {
+    "discipline": "Matemática",
+    "topic": "Matemática",
+    "statement": "De quantas maneiras diferentes 3 clientes podem ser atendidos, um de cada vez, em 3 guichês distintos, se cada guichê atende apenas um cliente e a ordem de atendimento importa?",
+    "options": {
+      "A": "3",
+      "B": "6",
+      "C": "9",
+      "D": "12",
+      "E": "27"
+    },
+    "correct_answer": "B",
+    "explanation": "Como a ordem importa e não há repetição, o total de arranjos é 3! = 3 × 2 × 1 = 6 maneiras diferentes."
+  },
+  {
+    "discipline": "Matemática",
+    "topic": "Matemática",
+    "statement": "Um produto financeiro teve sua taxa reajustada em 10% em um trimestre e, no trimestre seguinte, mais 10% sobre o novo valor. Qual foi o aumento total acumulado, em porcentagem?",
+    "options": {
+      "A": "20%",
+      "B": "20,5%",
+      "C": "21%",
+      "D": "22%",
+      "E": "25%"
+    },
+    "correct_answer": "C",
+    "explanation": "Aumentos sucessivos se multiplicam, não se somam diretamente: 1,10 × 1,10 = 1,21, ou seja, um aumento acumulado de 21% — e não 20%, como uma soma simples sugeriria."
+  },
+  {
+    "discipline": "Matemática",
+    "topic": "Matemática",
+    "statement": "Um candidato obteve as seguintes notas na prova do banco: 80 pontos em Conhecimentos Básicos (peso 1) e 70 pontos em Conhecimentos Específicos (peso 1,5). Qual foi sua média ponderada?",
+    "options": {
+      "A": "72",
+      "B": "73",
+      "C": "74",
+      "D": "75",
+      "E": "76"
+    },
+    "correct_answer": "C",
+    "explanation": "Média ponderada = (80×1 + 70×1,5) ÷ (1+1,5) = (80+105) ÷ 2,5 = 185 ÷ 2,5 = 74."
+  },
+  {
+    "discipline": "Matemática",
+    "topic": "Matemática",
+    "statement": "Três caixas de atendimento, trabalhando no mesmo ritmo, atendem 90 clientes em 2 horas. Se apenas duas caixas estiverem disponíveis, quanto tempo levarão para atender o mesmo número de clientes, mantendo o ritmo?",
+    "options": {
+      "A": "2 horas",
+      "B": "2h30",
+      "C": "3 horas",
+      "D": "3h30",
+      "E": "4 horas"
+    },
+    "correct_answer": "C",
+    "explanation": "Grandeza inversamente proporcional ao número de caixas: 3 caixas levam 2 horas, logo o trabalho total equivale a 3×2 = 6 \"caixa-horas\". Com 2 caixas, o tempo necessário é 6 ÷ 2 = 3 horas."
+  },
+  {
+    "discipline": "Atualidades do Mercado Financeiro",
+    "topic": "Atualidades do Mercado Financeiro",
+    "statement": "O Open Banking (hoje parte do Open Finance) tem como principal característica:",
+    "options": {
+      "A": "Permitir que qualquer pessoa acesse dados bancários de terceiros sem autorização.",
+      "B": "Obrigar os bancos a fechar suas agências físicas.",
+      "C": "Permitir, mediante autorização do cliente, o compartilhamento de dados e serviços financeiros entre instituições.",
+      "D": "Substituir o Banco Central na regulação do sistema financeiro.",
+      "E": "Eliminar a necessidade de conta corrente para movimentar dinheiro."
+    },
+    "correct_answer": "C",
+    "explanation": "O Open Banking/Open Finance permite, sempre com autorização do cliente, o compartilhamento de dados e serviços entre instituições financeiras, aumentando a concorrência e a portabilidade de produtos."
+  },
+  {
+    "discipline": "Atualidades do Mercado Financeiro",
+    "topic": "Atualidades do Mercado Financeiro",
+    "statement": "O Pix, sistema de pagamentos instantâneos brasileiro, é administrado por:",
+    "options": {
+      "A": "A instituição financeira de preferência do usuário",
+      "B": "A Federação Brasileira de Bancos (Febraban)",
+      "C": "O Banco Central do Brasil",
+      "D": "A Comissão de Valores Mobiliários (CVM)",
+      "E": "Cada estado da federação, de forma independente"
+    },
+    "correct_answer": "C",
+    "explanation": "O Pix foi criado e é administrado pelo Banco Central do Brasil, funcionando 24 horas por dia, 7 dias por semana, com liquidação instantânea."
+  },
+  {
+    "discipline": "Atualidades do Mercado Financeiro",
+    "topic": "Atualidades do Mercado Financeiro",
+    "statement": "Assinale a alternativa que melhor define uma \"fintech\".",
+    "options": {
+      "A": "Uma agência reguladora do sistema financeiro.",
+      "B": "Uma empresa que usa tecnologia para oferecer produtos ou serviços financeiros de forma ágil e digital.",
+      "C": "Um tipo de conta poupança com rendimento diferenciado.",
+      "D": "Um imposto cobrado sobre operações financeiras.",
+      "E": "Um sinônimo de banco tradicional de grande porte."
+    },
+    "correct_answer": "B",
+    "explanation": "Fintech é a empresa que combina tecnologia e serviços financeiros para oferecer soluções mais ágeis e digitais, muitas vezes com estrutura mais enxuta que a de um banco tradicional."
+  },
+  {
+    "discipline": "Atualidades do Mercado Financeiro",
+    "topic": "Atualidades do Mercado Financeiro",
+    "statement": "O que caracteriza um correspondente bancário (como lotéricas ou certos estabelecimentos comerciais)?",
+    "options": {
+      "A": "É uma instituição financeira independente, com CNPJ próprio de banco.",
+      "B": "É um estabelecimento contratado por uma instituição financeira para prestar serviços bancários em nome dela.",
+      "C": "É um órgão do governo que fiscaliza os bancos.",
+      "D": "É o nome dado ao gerente responsável por uma agência.",
+      "E": "É um tipo de conta bancária exclusiva para empresas."
+    },
+    "correct_answer": "B",
+    "explanation": "O correspondente bancário não é ele mesmo uma instituição financeira: é um estabelecimento contratado por um banco (ou outra instituição autorizada) para oferecer, em nome dela, serviços como recebimento de contas, saques e depósitos."
+  },
+  {
+    "discipline": "Atualidades do Mercado Financeiro",
+    "topic": "Atualidades do Mercado Financeiro",
+    "statement": "Sobre criptoativos e blockchain no contexto do mercado financeiro, é correto afirmar que:",
+    "options": {
+      "A": "O blockchain é um tipo de criptomoeda emitida pelo Banco Central.",
+      "B": "Criptoativos são sempre garantidos pelo Fundo Garantidor de Créditos (FGC).",
+      "C": "Blockchain é uma tecnologia de registro distribuído, usada, entre outras aplicações, como base de criptoativos.",
+      "D": "O uso de blockchain é proibido no sistema financeiro brasileiro.",
+      "E": "Criptoativos são obrigatoriamente emitidos por bancos comerciais."
+    },
+    "correct_answer": "C",
+    "explanation": "Blockchain é uma tecnologia de registro distribuído (um \"livro-razão\" compartilhado e replicado em vários computadores), que serve de base para criptoativos, mas tem outras aplicações. Criptoativos não são garantidos pelo FGC nem emitidos exclusivamente por bancos."
+  },
+  {
+    "discipline": "Atualidades do Mercado Financeiro",
+    "topic": "Atualidades do Mercado Financeiro",
+    "statement": "A sigla ESG, cada vez mais presente no mercado financeiro, refere-se a:",
+    "options": {
+      "A": "Estratégias de Segurança Global, usadas para prevenir fraudes bancárias.",
+      "B": "Critérios Ambientais, Sociais e de Governança usados para avaliar práticas sustentáveis de empresas e investimentos.",
+      "C": "Um novo tipo de criptomoeda lastreada em ouro.",
+      "D": "Um sistema exclusivo de avaliação de crédito pessoal.",
+      "E": "Um imposto cobrado sobre operações internacionais."
+    },
+    "correct_answer": "B",
+    "explanation": "ESG é a sigla em inglês para Environmental, Social and Governance (Ambiental, Social e Governança) — um conjunto de critérios usado para avaliar o quão sustentável e ética é a atuação de uma empresa, cada vez mais considerado por investidores e instituições financeiras."
+  },
+  {
+    "discipline": "Atualidades do Mercado Financeiro",
+    "topic": "Atualidades do Mercado Financeiro",
+    "statement": "O termo \"inclusão financeira\" refere-se principalmente a:",
+    "options": {
+      "A": "A exclusão de clientes inadimplentes do sistema bancário.",
+      "B": "O acesso de parcelas da população antes desbancarizadas a produtos e serviços financeiros formais.",
+      "C": "A obrigatoriedade de todo cidadão investir em ações.",
+      "D": "A fusão entre bancos públicos e privados.",
+      "E": "A criação de impostos exclusivos para bancos digitais."
+    },
+    "correct_answer": "B",
+    "explanation": "Inclusão financeira é o processo de ampliar o acesso de pessoas antes fora do sistema bancário formal a contas, crédito, meios de pagamento e outros serviços financeiros — um tema fortalecido no Brasil por iniciativas como contas digitais gratuitas e o Pix."
+  },
+  {
+    "discipline": "Matemática Financeira",
+    "topic": "Matemática Financeira",
+    "statement": "Calcule o juro simples de um capital de R$ 2.000,00, aplicado a uma taxa de 3% ao mês, durante 4 meses.",
+    "options": {
+      "A": "R$ 60,00",
+      "B": "R$ 120,00",
+      "C": "R$ 180,00",
+      "D": "R$ 240,00",
+      "E": "R$ 300,00"
+    },
+    "correct_answer": "D",
+    "explanation": "No regime de juros simples, J = C × i × t = 2.000 × 0,03 × 4 = R$ 240,00."
+  },
+  {
+    "discipline": "Matemática Financeira",
+    "topic": "Matemática Financeira",
+    "statement": "O que caracteriza o regime de juros compostos, diferentemente dos juros simples?",
+    "options": {
+      "A": "Os juros incidem sempre sobre o capital inicial, em todos os períodos.",
+      "B": "Os juros incidem sobre o montante acumulado do período anterior (juros sobre juros).",
+      "C": "Os juros são cobrados apenas uma vez, no início da aplicação.",
+      "D": "Não há incidência de juros, apenas correção monetária.",
+      "E": "A taxa de juros é sempre decrescente ao longo do tempo."
+    },
+    "correct_answer": "B",
+    "explanation": "No regime de juros compostos, cada novo período é calculado sobre o montante (capital + juros) acumulado até então — por isso \"juros sobre juros\" —, diferente dos juros simples, que incidem sempre sobre o capital inicial."
+  },
+  {
+    "discipline": "Matemática Financeira",
+    "topic": "Matemática Financeira",
+    "statement": "No Sistema de Amortização Constante (SAC), o comportamento das prestações ao longo do financiamento é:",
+    "options": {
+      "A": "Crescente, porque a amortização aumenta a cada parcela.",
+      "B": "Constante, porque juros e amortização não se alteram.",
+      "C": "Decrescente, porque a amortização é constante e os juros diminuem sobre o saldo devedor.",
+      "D": "Decrescente na primeira metade e depois crescente.",
+      "E": "Sempre igual ao valor da Tabela Price."
+    },
+    "correct_answer": "C",
+    "explanation": "No SAC, a amortização é constante em todas as parcelas. Como os juros incidem sobre o saldo devedor, que vai diminuindo, o valor dos juros cai a cada período — e a prestação total (amortização + juros) é decrescente."
+  },
+  {
+    "discipline": "Matemática Financeira",
+    "topic": "Matemática Financeira",
+    "statement": "Na Tabela Price (Sistema Francês de Amortização), é correto afirmar que:",
+    "options": {
+      "A": "As prestações são decrescentes ao longo de todo o financiamento.",
+      "B": "As prestações são constantes, mas a composição entre juros e amortização varia a cada período.",
+      "C": "Somente os juros são pagos, sem nunca haver amortização do saldo devedor.",
+      "D": "A amortização é sempre maior que os juros, do início ao fim do contrato.",
+      "E": "Não é possível aplicar esse sistema a financiamentos de longo prazo."
+    },
+    "correct_answer": "B",
+    "explanation": "Na Tabela Price, a prestação total é constante. O que muda, período a período, é a proporção entre juros (que diminuem) e amortização (que aumenta) dentro dessa prestação fixa."
+  },
+  {
+    "discipline": "Matemática Financeira",
+    "topic": "Matemática Financeira",
+    "statement": "O desconto comercial (também chamado de \"por fora\") é calculado:",
+    "options": {
+      "A": "Sobre o valor atual (valor líquido) do título.",
+      "B": "Sobre o valor nominal (valor de face) do título.",
+      "C": "Apenas em operações acima de 5 anos.",
+      "D": "Sem qualquer relação com uma taxa de desconto.",
+      "E": "Da mesma forma que o desconto racional, sem nenhuma diferença entre eles."
+    },
+    "correct_answer": "B",
+    "explanation": "O desconto comercial (por fora) aplica a taxa sobre o valor nominal (valor de face) do título — diferente do desconto racional (por dentro), que aplica a taxa sobre o valor atual. Por isso, o comercial costuma resultar em taxa efetiva mais alta."
+  },
+  {
+    "discipline": "Matemática Financeira",
+    "topic": "Matemática Financeira",
+    "statement": "Sobre taxas de juros, é correto afirmar que a taxa nominal:",
+    "options": {
+      "A": "É sempre igual à taxa efetiva, não havendo diferença entre elas.",
+      "B": "É a taxa contratada, geralmente anual, cujos períodos de capitalização não coincidem com o período de referência, diferindo da taxa efetiva.",
+      "C": "Só existe em operações de juros simples.",
+      "D": "É sempre menor que a taxa Selic.",
+      "E": "Não pode ser convertida em taxa efetiva."
+    },
+    "correct_answer": "B",
+    "explanation": "A taxa nominal é a taxa \"de contrato\", normalmente anual, mas capitalizada em períodos menores (por exemplo, mensal). Como não considera a capitalização composta dentro do período, ela costuma ser diferente (geralmente menor) da taxa efetiva, que reflete o rendimento realmente obtido."
+  },
+  {
+    "discipline": "Matemática Financeira",
+    "topic": "Matemática Financeira",
+    "statement": "Um investimento rende uma taxa de 2% ao mês, em regime de juros compostos. Qual é o montante aproximado, após 2 meses, para um capital de R$ 1.000,00?",
+    "options": {
+      "A": "R$ 1.020,00",
+      "B": "R$ 1.040,00",
+      "C": "R$ 1.040,40",
+      "D": "R$ 1.044,00",
+      "E": "R$ 1.060,00"
+    },
+    "correct_answer": "C",
+    "explanation": "Em juros compostos, M = C × (1+i)^t = 1.000 × (1,02)² = 1.000 × 1,0404 = R$ 1.040,40."
+  },
+  {
+    "discipline": "Conhecimentos Bancários",
+    "topic": "Conhecimentos Bancários",
+    "statement": "Qual é o órgão normativo máximo do Sistema Financeiro Nacional (SFN)?",
+    "options": {
+      "A": "O Banco Central do Brasil (Bacen)",
+      "B": "A Comissão de Valores Mobiliários (CVM)",
+      "C": "O Conselho Monetário Nacional (CMN)",
+      "D": "A Federação Brasileira de Bancos (Febraban)",
+      "E": "O Banco do Brasil"
+    },
+    "correct_answer": "C",
+    "explanation": "O CMN é o órgão normativo máximo do SFN: define as diretrizes das políticas monetária, creditícia e cambial. O Bacen é o órgão executivo que aplica essas diretrizes."
+  },
+  {
+    "discipline": "Conhecimentos Bancários",
+    "topic": "Conhecimentos Bancários",
+    "statement": "Assinale a alternativa que corresponde a uma atribuição do Banco Central do Brasil.",
+    "options": {
+      "A": "Regular e fiscalizar o mercado de valores mobiliários (ações, debêntures).",
+      "B": "Emitir moeda e executar a política monetária definida pelo CMN.",
+      "C": "Fiscalizar exclusivamente as cooperativas de crédito rurais.",
+      "D": "Definir a alíquota do Imposto de Renda sobre aplicações financeiras.",
+      "E": "Substituir o CMN na definição das diretrizes do SFN."
+    },
+    "correct_answer": "B",
+    "explanation": "O Banco Central executa a política monetária definida pelo CMN, emite moeda e fiscaliza as instituições financeiras. Regular o mercado de valores mobiliários é atribuição da CVM."
+  },
+  {
+    "discipline": "Conhecimentos Bancários",
+    "topic": "Conhecimentos Bancários",
+    "statement": "Sobre a tributação de Imposto de Renda para pessoa física, é correto afirmar que:",
+    "options": {
+      "A": "CDB e LCI têm exatamente a mesma tributação.",
+      "B": "O CDB tem incidência de Imposto de Renda sobre o rendimento; a LCI é isenta para pessoa física.",
+      "C": "A LCI é tributada, mas o CDB é isento.",
+      "D": "Nenhum dos dois investimentos sofre incidência de Imposto de Renda.",
+      "E": "A tributação depende exclusivamente do banco emissor, não do tipo de produto."
+    },
+    "correct_answer": "B",
+    "explanation": "O CDB tem Imposto de Renda sobre o rendimento, conforme tabela regressiva. A LCI, assim como a LCA, é isenta de Imposto de Renda para pessoa física."
+  },
+  {
+    "discipline": "Conhecimentos Bancários",
+    "topic": "Conhecimentos Bancários",
+    "statement": "O cheque, como título de crédito, é caracterizado por ser:",
+    "options": {
+      "A": "Uma promessa de pagamento futuro, com prazo mínimo de 30 dias.",
+      "B": "Uma ordem de pagamento à vista.",
+      "C": "Um título exclusivo para operações entre empresas (pessoa jurídica).",
+      "D": "Um documento que substitui o contrato de abertura de conta.",
+      "E": "Um instrumento de crédito de prazo indeterminado, sem data de emissão."
+    },
+    "correct_answer": "B",
+    "explanation": "O cheque é uma ordem de pagamento à vista: ao ser apresentado ao banco sacado, o valor deve ser pago imediatamente, desde que haja fundos — diferente da nota promissória, que é uma promessa de pagamento futuro."
+  },
+  {
+    "discipline": "Conhecimentos Bancários",
+    "topic": "Conhecimentos Bancários",
+    "statement": "O Fundo Garantidor de Créditos (FGC) tem como função:",
+    "options": {
+      "A": "Conceder empréstimos subsidiados a pequenas empresas.",
+      "B": "Garantir, até determinado limite, depósitos e investimentos em caso de intervenção ou liquidação de uma instituição financeira.",
+      "C": "Fiscalizar o cumprimento de metas comerciais dos bancos.",
+      "D": "Definir a taxa básica de juros da economia (Selic).",
+      "E": "Substituir o papel do Banco Central em crises bancárias."
+    },
+    "correct_answer": "B",
+    "explanation": "O FGC é uma entidade privada, sem fins lucrativos, que garante o ressarcimento de depositantes e investidores — até R$ 250 mil por CPF/CNPJ por instituição, com teto de R$ 1 milhão a cada 4 anos — em caso de intervenção, liquidação ou falência de uma instituição associada."
+  },
+  {
+    "discipline": "Conhecimentos Bancários",
+    "topic": "Conhecimentos Bancários",
+    "statement": "Sobre os meios de pagamento eletrônico no Brasil, é correto afirmar que:",
+    "options": {
+      "A": "O TED só pode ser realizado entre contas do mesmo banco.",
+      "B": "O Pix tem liquidação instantânea e funciona 24 horas por dia, todos os dias da semana.",
+      "C": "O DOC é o meio de pagamento mais rápido disponível atualmente.",
+      "D": "Cartões de débito não são considerados meios de pagamento eletrônico.",
+      "E": "O Pix opera apenas em horário comercial, de segunda a sexta."
+    },
+    "correct_answer": "B",
+    "explanation": "O Pix se destaca por oferecer liquidação instantânea, 24 horas por dia, todos os dias — inclusive fins de semana e feriados, diferentemente do TED e do já descontinuado DOC."
+  },
+  {
+    "discipline": "Conhecimentos Bancários",
+    "topic": "Conhecimentos Bancários",
+    "statement": "A Comissão de Valores Mobiliários (CVM) tem como principal atribuição:",
+    "options": {
+      "A": "Emitir papel-moeda no Brasil.",
+      "B": "Regular e fiscalizar o mercado de capitais e a negociação de valores mobiliários, como ações e debêntures.",
+      "C": "Definir a taxa básica de juros da economia.",
+      "D": "Fiscalizar exclusivamente os bancos comerciais.",
+      "E": "Substituir o CMN na definição da política monetária."
+    },
+    "correct_answer": "B",
+    "explanation": "A CVM é o órgão responsável por regular, disciplinar e fiscalizar o mercado de valores mobiliários (ações, debêntures, fundos de investimento, entre outros), protegendo investidores e garantindo a transparência desse mercado."
+  },
+  {
+    "discipline": "Conhecimentos Bancários",
+    "topic": "Conhecimentos Bancários",
+    "statement": "Sobre a caderneta de poupança, é correto afirmar que:",
+    "options": {
+      "A": "É tributada pelo Imposto de Renda para todas as pessoas físicas.",
+      "B": "É isenta de Imposto de Renda para pessoa física e tem rendimento definido por regras específicas vinculadas à Selic.",
+      "C": "Não conta com qualquer garantia do Fundo Garantidor de Créditos.",
+      "D": "Só pode ser aberta por pessoas jurídicas.",
+      "E": "Tem rendimento fixo de 1% ao mês, independentemente da Selic."
+    },
+    "correct_answer": "B",
+    "explanation": "A poupança é isenta de Imposto de Renda para pessoa física. Seu rendimento segue regras específicas vinculadas ao patamar da Selic, e ela conta com garantia do FGC."
+  },
+  {
+    "discipline": "Conhecimentos Bancários",
+    "topic": "Conhecimentos Bancários",
+    "statement": "A duplicata, como título de crédito, é caracterizada por:",
+    "options": {
+      "A": "Ser emitida exclusivamente por pessoas físicas em operações de empréstimo pessoal.",
+      "B": "Estar vinculada a uma compra e venda mercantil ou prestação de serviços, representando um crédito do vendedor/prestador contra o comprador.",
+      "C": "Ser um título ao portador, sem identificação do credor.",
+      "D": "Ter validade apenas para operações internacionais.",
+      "E": "Substituir obrigatoriamente o uso de cheques em qualquer transação comercial."
+    },
+    "correct_answer": "B",
+    "explanation": "A duplicata é um título de crédito emitido com base em uma fatura de compra e venda mercantil ou de prestação de serviços, representando o direito do vendedor/prestador de receber o valor correspondente do comprador."
+  },
+  {
+    "discipline": "Conhecimentos Bancários",
+    "topic": "Conhecimentos Bancários",
+    "statement": "Diferentemente da nota promissória, que é uma promessa direta de pagamento entre duas partes, a letra de câmbio caracteriza-se por:",
+    "options": {
+      "A": "Envolver três figuras: sacador, sacado e tomador, sendo uma ordem de pagamento.",
+      "B": "Ser exclusiva para operações entre bancos.",
+      "C": "Não poder ser endossada a terceiros.",
+      "D": "Ser sempre emitida sem data de vencimento.",
+      "E": "Ter validade apenas em operações internacionais."
+    },
+    "correct_answer": "A",
+    "explanation": "A letra de câmbio envolve três partes: o sacador (quem emite a ordem), o sacado (quem deve pagar) e o tomador (quem recebe o valor) — é uma ordem de pagamento, diferente da nota promissória, que é uma promessa direta de pagamento entre emitente e beneficiário."
+  },
+  {
+    "discipline": "Conhecimentos Bancários",
+    "topic": "Conhecimentos Bancários",
+    "statement": "Um fundo de investimento pode ser definido como:",
+    "options": {
+      "A": "Uma conta corrente com limite de crédito rotativo.",
+      "B": "Uma comunhão de recursos captados de diversos investidores, geridos por um gestor profissional que aplica esse capital conforme uma política definida.",
+      "C": "Um empréstimo consignado descontado em folha de pagamento.",
+      "D": "Um seguro de vida com cobertura por invalidez.",
+      "E": "Um tipo de cartão de crédito com cashback automático."
+    },
+    "correct_answer": "B",
+    "explanation": "Um fundo de investimento reúne recursos de vários investidores (cotistas) em um patrimônio comum, administrado por um gestor profissional, que aplica esse capital em ativos financeiros conforme a política de investimento do fundo."
+  },
+  {
+    "discipline": "Conhecimentos Bancários",
+    "topic": "Conhecimentos Bancários",
+    "statement": "A taxa Selic, definida pelo Comitê de Política Monetária (Copom), tem como principal função:",
+    "options": {
+      "A": "Servir de referência para as taxas de juros da economia, sendo usada na política monetária para controlar a inflação.",
+      "B": "Definir exclusivamente o valor do salário mínimo.",
+      "C": "Substituir a necessidade de Imposto de Renda sobre aplicações financeiras.",
+      "D": "Fixar o valor máximo das tarifas bancárias.",
+      "E": "Ser aplicada apenas a operações de comércio exterior."
+    },
+    "correct_answer": "A",
+    "explanation": "A Selic é a taxa básica de juros da economia brasileira, definida pelo Copom. Ela serve como referência para praticamente todas as demais taxas de juros do país e é uma das principais ferramentas de controle da inflação."
+  },
+  {
+    "discipline": "Conhecimentos Bancários",
+    "topic": "Conhecimentos Bancários",
+    "statement": "No contexto bancário, o termo \"compliance\" está relacionado a:",
+    "options": {
+      "A": "O setor responsável exclusivamente por vendas e metas comerciais.",
+      "B": "O conjunto de práticas e políticas que garantem que a instituição cumpra leis, normas e regulamentos aplicáveis, incluindo prevenção à lavagem de dinheiro.",
+      "C": "Um tipo de investimento de renda variável.",
+      "D": "A área responsável apenas pela contratação de novos funcionários.",
+      "E": "Um sinônimo de auditoria externa independente."
+    },
+    "correct_answer": "B",
+    "explanation": "Compliance é a função responsável por assegurar que a instituição financeira cumpra leis, normas internas e regulamentações do setor — incluindo regras de prevenção à lavagem de dinheiro e ao financiamento do terrorismo, ética e proteção de dados."
+  },
+  {
+    "discipline": "Conhecimentos de Informática",
+    "topic": "Conhecimentos de Informática",
+    "statement": "Em um banco de dados relacional, a chave primária (primary key) de uma tabela tem a função de:",
+    "options": {
+      "A": "Definir a cor de exibição dos dados na tela.",
+      "B": "Identificar, de forma única, cada registro da tabela.",
+      "C": "Armazenar apenas dados numéricos decimais.",
+      "D": "Criptografar automaticamente todos os campos da tabela.",
+      "E": "Ordenar alfabeticamente os registros da tabela."
+    },
+    "correct_answer": "B",
+    "explanation": "A chave primária identifica cada registro de forma única — não pode haver dois registros com o mesmo valor de chave primária, nem valores em branco nesse campo."
+  },
+  {
+    "discipline": "Conhecimentos de Informática",
+    "topic": "Conhecimentos de Informática",
+    "statement": "Assinale a alternativa que apresenta corretamente a diferença entre hardware e software.",
+    "options": {
+      "A": "Hardware é o sistema operacional; software é a memória RAM do computador.",
+      "B": "Hardware é a parte física do computador; software é o conjunto de programas e instruções que o fazem funcionar.",
+      "C": "Hardware e software são sinônimos, usados em contextos diferentes.",
+      "D": "Software é sempre mais rápido que hardware, pois não depende de componentes físicos.",
+      "E": "Hardware se refere apenas a impressoras e teclados."
+    },
+    "correct_answer": "B",
+    "explanation": "Hardware é a parte física e tangível do computador (processador, memória, teclado etc.). Software é o conjunto de programas e instruções que comandam o funcionamento desse hardware."
+  },
+  {
+    "discipline": "Conhecimentos de Informática",
+    "topic": "Conhecimentos de Informática",
+    "statement": "\"Phishing\" é um golpe que consiste em:",
+    "options": {
+      "A": "Instalar fisicamente um dispositivo em um caixa eletrônico para clonar cartões.",
+      "B": "Enganar a vítima, geralmente por e-mail ou mensagem falsa, para que ela forneça dados sigilosos.",
+      "C": "Interceptar sinais de Wi-Fi de longa distância sem qualquer interação com a vítima.",
+      "D": "Um tipo de vírus que danifica exclusivamente impressoras.",
+      "E": "Uma técnica legítima de marketing bancário."
+    },
+    "correct_answer": "B",
+    "explanation": "Phishing é um golpe de engenharia social: o criminoso se passa por uma instituição confiável para induzir a vítima a fornecer dados sigilosos, geralmente por e-mails, links ou mensagens falsas."
+  },
+  {
+    "discipline": "Conhecimentos de Informática",
+    "topic": "Conhecimentos de Informática",
+    "statement": "Sobre backup de dados, é correto afirmar que:",
+    "options": {
+      "A": "É dispensável quando os dados estão armazenados apenas na nuvem.",
+      "B": "Consiste em manter cópias de segurança dos dados, para permitir sua recuperação em caso de perda, falha ou ataque.",
+      "C": "É um processo que impede totalmente qualquer tipo de ataque cibernético.",
+      "D": "Deve ser feito apenas uma única vez, na instalação do sistema.",
+      "E": "É sinônimo de antivírus."
+    },
+    "correct_answer": "B",
+    "explanation": "Backup é manter cópias de segurança dos dados para, em caso de perda, corrupção, falha ou ataque, ser possível recuperar as informações. Não substitui um antivírus nem torna o sistema imune a ataques."
+  },
+  {
+    "discipline": "Conhecimentos de Informática",
+    "topic": "Conhecimentos de Informática",
+    "statement": "Qual a principal diferença entre memória RAM e um disco de armazenamento (HD/SSD)?",
+    "options": {
+      "A": "Não há diferença; são sinônimos.",
+      "B": "A RAM armazena dados temporariamente enquanto o computador está ligado, enquanto o disco armazena dados de forma permanente, mesmo desligado.",
+      "C": "A RAM é usada exclusivamente para conectar à internet.",
+      "D": "O disco de armazenamento processa instruções do processador diretamente.",
+      "E": "A RAM tem capacidade sempre maior que o disco de armazenamento."
+    },
+    "correct_answer": "B",
+    "explanation": "A memória RAM é volátil: armazena dados temporariamente enquanto o equipamento está ligado, perdendo-os ao desligar. Já o disco de armazenamento (HD ou SSD) mantém os dados de forma permanente, mesmo sem energia."
+  },
+  {
+    "discipline": "Conhecimentos de Informática",
+    "topic": "Conhecimentos de Informática",
+    "statement": "Qual das alternativas apresenta corretamente um exemplo de sistema operacional?",
+    "options": {
+      "A": "Microsoft Word",
+      "B": "Windows",
+      "C": "Google Chrome",
+      "D": "Excel",
+      "E": "Adobe Reader"
+    },
+    "correct_answer": "B",
+    "explanation": "O sistema operacional é o software base que gerencia o hardware e permite a execução dos demais programas. Windows é um sistema operacional; Word, Excel, Chrome e Adobe Reader são aplicativos que rodam sobre um sistema operacional."
+  },
+  {
+    "discipline": "Conhecimentos de Informática",
+    "topic": "Conhecimentos de Informática",
+    "statement": "Sobre redes de computadores, é correto afirmar que:",
+    "options": {
+      "A": "LAN (Local Area Network) é uma rede que cobre uma grande área geográfica, como um país inteiro.",
+      "B": "WAN (Wide Area Network) conecta redes em uma área geográfica ampla, podendo abranger cidades, países ou continentes — a internet é o maior exemplo.",
+      "C": "LAN e WAN são termos sinônimos.",
+      "D": "Uma rede LAN não pode ter mais de dois computadores conectados.",
+      "E": "WAN é usada apenas para redes sem fio (Wi-Fi)."
+    },
+    "correct_answer": "B",
+    "explanation": "LAN (rede local) cobre uma área pequena, como um escritório ou uma agência bancária. WAN (rede de longa distância) conecta redes em uma área geográfica ampla — a internet é o principal exemplo de WAN."
+  },
+  {
+    "discipline": "Conhecimentos de Informática",
+    "topic": "Conhecimentos de Informática",
+    "statement": "O termo \"computação em nuvem\" (cloud computing) refere-se a:",
+    "options": {
+      "A": "Um tipo de vírus que se espalha por redes Wi-Fi públicas.",
+      "B": "A entrega de serviços de computação (armazenamento, processamento, softwares) pela internet, sem que o usuário precise manter toda a infraestrutura localmente.",
+      "C": "Um sistema exclusivo para previsão do tempo.",
+      "D": "Um antivírus gratuito distribuído pelo governo.",
+      "E": "Uma técnica de criptografia de senhas."
+    },
+    "correct_answer": "B",
+    "explanation": "Computação em nuvem é o modelo em que serviços de tecnologia — como armazenamento de arquivos, processamento e softwares — são fornecidos pela internet, permitindo acesso remoto sem que o usuário precise manter servidores próprios."
+  },
+  {
+    "discipline": "Conhecimentos de Informática",
+    "topic": "Conhecimentos de Informática",
+    "statement": "A autenticação de dois fatores (2FA), cada vez mais usada em aplicativos bancários, tem como objetivo:",
+    "options": {
+      "A": "Substituir completamente a necessidade de senha.",
+      "B": "Adicionar uma camada extra de segurança, exigindo uma segunda confirmação (como um código enviado por SMS ou aplicativo) além da senha.",
+      "C": "Permitir que qualquer pessoa acesse a conta sem verificação.",
+      "D": "Ser usada apenas em compras internacionais.",
+      "E": "Substituir o uso de biometria."
+    },
+    "correct_answer": "B",
+    "explanation": "A autenticação de dois fatores exige uma segunda forma de verificação — além da senha —, como um código temporário, um aplicativo autenticador ou biometria, dificultando o acesso indevido mesmo que a senha seja descoberta."
+  },
+  {
+    "discipline": "Conhecimentos de Informática",
+    "topic": "Conhecimentos de Informática",
+    "statement": "O \"ransomware\" é um tipo de malware que:",
+    "options": {
+      "A": "Acelera o desempenho do computador.",
+      "B": "Sequestra ou criptografa os arquivos da vítima, exigindo pagamento de resgate para liberá-los.",
+      "C": "É usado exclusivamente para fins publicitários legítimos.",
+      "D": "Melhora a segurança do sistema automaticamente.",
+      "E": "É um sinônimo de firewall."
+    },
+    "correct_answer": "B",
+    "explanation": "Ransomware é um tipo de software malicioso que criptografa (ou bloqueia o acesso a) arquivos do dispositivo infectado, exigindo o pagamento de um resgate para que a vítima recupere o acesso."
+  },
+  {
+    "discipline": "Conhecimentos de Informática",
+    "topic": "Conhecimentos de Informática",
+    "statement": "Em um banco de dados relacional, a \"chave estrangeira\" (foreign key) tem a função de:",
+    "options": {
+      "A": "Criptografar os dados de uma tabela automaticamente.",
+      "B": "Estabelecer um relacionamento entre tabelas, referenciando a chave primária de outra tabela.",
+      "C": "Impedir que qualquer registro seja excluído do banco de dados.",
+      "D": "Definir a cor de exibição dos dados em um relatório.",
+      "E": "Substituir a necessidade de uma chave primária."
+    },
+    "correct_answer": "B",
+    "explanation": "A chave estrangeira é um campo que referencia a chave primária de outra tabela, criando um relacionamento entre elas — por exemplo, ligando uma tabela de \"contas\" a uma tabela de \"clientes\"."
+  },
+  {
+    "discipline": "Conhecimentos de Informática",
+    "topic": "Conhecimentos de Informática",
+    "statement": "Em lógica de programação, uma estrutura condicional (como \"se... então...\") é usada para:",
+    "options": {
+      "A": "Repetir um bloco de instruções um número fixo de vezes.",
+      "B": "Armazenar permanentemente um valor em disco.",
+      "C": "Executar um bloco de instruções apenas quando uma determinada condição for verdadeira.",
+      "D": "Conectar o programa à internet.",
+      "E": "Ordenar uma lista de valores automaticamente."
+    },
+    "correct_answer": "C",
+    "explanation": "Estruturas condicionais permitem que o programa tome decisões, executando um bloco de código apenas quando uma condição especificada é verdadeira — diferente das estruturas de repetição, que controlam a repetição de instruções."
+  },
+  {
+    "discipline": "Conhecimentos de Informática",
+    "topic": "Conhecimentos de Informática",
+    "statement": "Sobre boas práticas de backup, é correto afirmar que:",
+    "options": {
+      "A": "Um único backup, armazenado no mesmo local dos dados originais, já é suficiente.",
+      "B": "É recomendável manter cópias de segurança em locais diferentes (por exemplo, um backup local e outro em nuvem), reduzindo o risco de perda simultânea.",
+      "C": "Backups automáticos são sempre desnecessários se o antivírus estiver atualizado.",
+      "D": "Não é possível automatizar o processo de backup.",
+      "E": "Backup só é necessário para arquivos de texto, não para imagens ou planilhas."
+    },
+    "correct_answer": "B",
+    "explanation": "Uma boa prática de segurança da informação é manter cópias de backup em locais diferentes — por exemplo, uma cópia local e outra em nuvem —, reduzindo o risco de perda total dos dados em caso de furto, incêndio ou falha do equipamento original."
+  },
+  {
+    "discipline": "Conhecimentos de Informática",
+    "topic": "Conhecimentos de Informática",
+    "statement": "Um firewall tem como principal função:",
+    "options": {
+      "A": "Aumentar a velocidade da conexão de internet.",
+      "B": "Monitorar e controlar o tráfego de rede, permitindo ou bloqueando conexões conforme regras de segurança definidas.",
+      "C": "Armazenar senhas de forma criptografada automaticamente.",
+      "D": "Substituir a necessidade de antivírus.",
+      "E": "Converter arquivos entre diferentes formatos."
+    },
+    "correct_answer": "B",
+    "explanation": "O firewall atua como uma barreira de segurança entre redes, monitorando e controlando o tráfego de dados conforme regras definidas, para bloquear acessos não autorizados."
+  },
+  {
+    "discipline": "Conhecimentos de Informática",
+    "topic": "Conhecimentos de Informática",
+    "statement": "O certificado digital, cada vez mais usado em operações bancárias e contratos, serve para:",
+    "options": {
+      "A": "Armazenar o histórico de compras do cliente.",
+      "B": "Garantir a identidade das partes envolvidas em uma transação eletrônica e a integridade/autenticidade de documentos assinados digitalmente.",
+      "C": "Substituir o cartão de crédito físico.",
+      "D": "Aumentar automaticamente o limite de crédito do cliente.",
+      "E": "Ser usado exclusivamente por pessoas jurídicas."
+    },
+    "correct_answer": "B",
+    "explanation": "O certificado digital é um arquivo eletrônico que funciona como uma identidade virtual, permitindo comprovar a identidade de uma pessoa em transações eletrônicas e garantir a autenticidade de documentos assinados digitalmente."
+  },
+  {
+    "discipline": "Conhecimentos de Informática",
+    "topic": "Conhecimentos de Informática",
+    "statement": "Em uma planilha eletrônica, qual função é comumente usada para somar automaticamente um intervalo de células?",
+    "options": {
+      "A": "MÉDIA",
+      "B": "SOMA",
+      "C": "PROCV",
+      "D": "SE",
+      "E": "CONT.SE"
+    },
+    "correct_answer": "B",
+    "explanation": "A função SOMA soma automaticamente os valores de um intervalo de células. MÉDIA calcula a média aritmética, PROCV busca valores em uma tabela, SE testa uma condição, e CONT.SE conta células que atendem a um critério."
+  },
+  {
+    "discipline": "Vendas e Negociação",
+    "topic": "Vendas e Negociação",
+    "statement": "A \"venda consultiva\" é caracterizada por:",
+    "options": {
+      "A": "Oferecer sempre o produto de maior valor, independentemente do perfil do cliente.",
+      "B": "Entender primeiro as necessidades do cliente, para então indicar a solução mais adequada.",
+      "C": "Evitar qualquer contato com o cliente antes de oferecer o produto.",
+      "D": "Focar exclusivamente em metas numéricas, sem considerar o perfil do cliente.",
+      "E": "Ser aplicável apenas a produtos de investimento, nunca a produtos de crédito."
+    },
+    "correct_answer": "B",
+    "explanation": "Na venda consultiva, o vendedor atua como consultor: entende o momento e as necessidades reais do cliente antes de recomendar a solução mais adequada, o que tende a gerar mais satisfação e fidelização."
+  },
+  {
+    "discipline": "Vendas e Negociação",
+    "topic": "Vendas e Negociação",
+    "statement": "Diante de uma objeção do cliente durante o atendimento, a conduta mais adequada é:",
+    "options": {
+      "A": "Ignorar a objeção e seguir apresentando o produto original.",
+      "B": "Interromper o cliente para evitar que ele continue falando.",
+      "C": "Ouvir com atenção, entender a preocupação real e responder com argumentos relevantes.",
+      "D": "Encerrar imediatamente o atendimento, encaminhando o cliente a outro setor.",
+      "E": "Concordar com tudo o que o cliente disser, sem checar as informações."
+    },
+    "correct_answer": "C",
+    "explanation": "Objeções costumam esconder uma dúvida, um receio ou uma necessidade não atendida. A abordagem adequada é ouvir, entender essa preocupação e responder com argumentos e informações relevantes."
+  },
+  {
+    "discipline": "Vendas e Negociação",
+    "topic": "Vendas e Negociação",
+    "statement": "Uma negociação do tipo \"ganha-ganha\" (win-win) é aquela em que:",
+    "options": {
+      "A": "Apenas uma das partes obtém vantagens, e a outra cede em tudo.",
+      "B": "O acordo final considera os interesses de ambas as partes envolvidas.",
+      "C": "Não há necessidade de diálogo entre as partes.",
+      "D": "Uma das partes precisa necessariamente sair prejudicada.",
+      "E": "O resultado é decidido exclusivamente por um mediador externo."
+    },
+    "correct_answer": "B",
+    "explanation": "A negociação \"ganha-ganha\" busca um acordo em que ambas as partes percebem vantagens, considerando os interesses de todos os envolvidos."
+  },
+  {
+    "discipline": "Vendas e Negociação",
+    "topic": "Vendas e Negociação",
+    "statement": "No atendimento bancário, a postura \"ativa\" em relação ao cliente significa:",
+    "options": {
+      "A": "Esperar que o cliente solicite tudo, sem antecipar necessidades.",
+      "B": "Antecipar necessidades e oferecer soluções relevantes, sem esperar apenas ser demandado.",
+      "C": "Recusar qualquer sugestão de produto que o cliente não tenha pedido.",
+      "D": "Priorizar exclusivamente o volume de atendimentos, sem qualidade.",
+      "E": "Evitar qualquer contato proativo com a carteira de clientes."
+    },
+    "correct_answer": "B",
+    "explanation": "Postura ativa (proativa) significa identificar e antecipar necessidades do cliente, oferecendo soluções relevantes, em vez de apenas reagir ao que é solicitado (postura reativa)."
+  },
+  {
+    "discipline": "Vendas e Negociação",
+    "topic": "Vendas e Negociação",
+    "statement": "A fidelização de clientes é importante para uma instituição financeira principalmente porque:",
+    "options": {
+      "A": "Reduz a necessidade de qualquer atendimento pós-venda.",
+      "B": "Clientes fiéis tendem a concentrar mais produtos na instituição e custam menos para reter do que para conquistar novos.",
+      "C": "Elimina totalmente a concorrência de outras instituições.",
+      "D": "É exigida por lei em todas as operações bancárias.",
+      "E": "Não tem relação com o cumprimento de metas comerciais."
+    },
+    "correct_answer": "B",
+    "explanation": "Clientes fiéis costumam concentrar mais produtos na instituição e, de forma geral, é mais barato mantê-los satisfeitos do que conquistar novos — o que também ajuda a cumprir metas comerciais de forma consistente."
+  },
+  {
+    "discipline": "Vendas e Negociação",
+    "topic": "Vendas e Negociação",
+    "statement": "A \"escuta ativa\", técnica valorizada no atendimento e na negociação, consiste em:",
+    "options": {
+      "A": "Ouvir o cliente apenas para identificar uma brecha para interromper e vender.",
+      "B": "Prestar atenção genuína ao que o cliente diz, demonstrando interesse e buscando compreender suas necessidades antes de responder.",
+      "C": "Evitar qualquer pergunta ao cliente durante o atendimento.",
+      "D": "Responder automaticamente com um script padrão, sem considerar o que foi dito.",
+      "E": "Delegar sempre a escuta do cliente a outro atendente."
+    },
+    "correct_answer": "B",
+    "explanation": "A escuta ativa envolve prestar atenção genuína ao que o cliente comunica, demonstrando interesse real e buscando compreender suas necessidades antes de oferecer uma resposta ou solução."
+  },
+  {
+    "discipline": "Vendas e Negociação",
+    "topic": "Vendas e Negociação",
+    "statement": "O termo \"rapport\", usado em vendas e negociação, refere-se a:",
+    "options": {
+      "A": "Um documento formal de fechamento de contrato.",
+      "B": "Uma relação de confiança e sintonia estabelecida entre vendedor e cliente, que facilita a comunicação.",
+      "C": "Um tipo de meta comercial trimestral.",
+      "D": "Um relatório financeiro obrigatório do banco.",
+      "E": "Uma taxa cobrada em operações de câmbio."
+    },
+    "correct_answer": "B",
+    "explanation": "Rapport é a relação de empatia, confiança e sintonia criada entre duas pessoas — no contexto comercial, entre vendedor e cliente —, o que torna a comunicação mais fluida e a negociação mais produtiva."
+  },
+  {
+    "discipline": "Vendas e Negociação",
+    "topic": "Vendas e Negociação",
+    "statement": "Ao oferecer a um cliente que já possui conta corrente também um cartão de crédito e um seguro, o gerente está praticando uma técnica conhecida como:",
+    "options": {
+      "A": "Downselling",
+      "B": "Cross-selling (venda cruzada)",
+      "C": "Cold calling",
+      "D": "Follow-up",
+      "E": "Benchmarking"
+    },
+    "correct_answer": "B",
+    "explanation": "Cross-selling (venda cruzada) é a prática de oferecer produtos ou serviços complementares ao que o cliente já possui ou está adquirindo — como oferecer um cartão de crédito e um seguro a quem já tem conta corrente."
+  },
+  {
+    "discipline": "Vendas e Negociação",
+    "topic": "Vendas e Negociação",
+    "statement": "Após uma proposta de crédito não ser fechada na primeira conversa, o gerente que entra em contato alguns dias depois para retomar o assunto está praticando:",
+    "options": {
+      "A": "Cross-selling",
+      "B": "Follow-up",
+      "C": "Benchmarking",
+      "D": "Rapport",
+      "E": "Cold calling"
+    },
+    "correct_answer": "B",
+    "explanation": "Follow-up é o acompanhamento feito após um primeiro contato, retomando a conversa com o cliente para tirar dúvidas, reforçar a proposta ou avançar na negociação."
+  },
+  {
+    "discipline": "Vendas e Negociação",
+    "topic": "Vendas e Negociação",
+    "statement": "Na venda consultiva, a diferença entre uma necessidade \"explícita\" e uma \"implícita\" do cliente está em que:",
+    "options": {
+      "A": "A necessidade explícita é a que o cliente já verbalizou claramente; a implícita ainda não foi declarada, mas pode ser identificada por meio de perguntas.",
+      "B": "Não existe diferença prática entre as duas.",
+      "C": "A necessidade implícita só pode ser identificada após o fechamento da venda.",
+      "D": "A necessidade explícita é sempre menos importante que a implícita.",
+      "E": "Apenas clientes pessoa jurídica possuem necessidades implícitas."
+    },
+    "correct_answer": "A",
+    "explanation": "Necessidades explícitas já foram expressas com clareza pelo cliente. Necessidades implícitas ainda não foram verbalizadas, mas podem ser reveladas por meio de perguntas bem feitas, permitindo oferecer soluções mais alinhadas ao que o cliente realmente precisa."
+  },
+  {
+    "discipline": "Vendas e Negociação",
+    "topic": "Vendas e Negociação",
+    "statement": "Ao apresentar um produto financeiro, é considerada uma boa prática de vendas:",
+    "options": {
+      "A": "Focar apenas nas características técnicas do produto, sem relacioná-las aos benefícios para o cliente.",
+      "B": "Traduzir as características do produto em benefícios concretos para a necessidade específica daquele cliente.",
+      "C": "Omitir informações relevantes que possam gerar dúvidas no cliente.",
+      "D": "Pressionar o cliente a decidir imediatamente, sem tempo para reflexão.",
+      "E": "Comparar o produto apenas com a concorrência, sem falar de seus próprios diferenciais."
+    },
+    "correct_answer": "B",
+    "explanation": "Uma boa prática de vendas consultivas é traduzir características técnicas em benefícios claros e relevantes para a necessidade específica do cliente."
+  },
+  {
+    "discipline": "Vendas e Negociação",
+    "topic": "Vendas e Negociação",
+    "statement": "A etapa de pós-venda, no relacionamento com o cliente bancário, tem como principal objetivo:",
+    "options": {
+      "A": "Encerrar definitivamente o contato com o cliente após a venda.",
+      "B": "Acompanhar a satisfação do cliente após a contratação do produto, fortalecendo o relacionamento e identificando novas oportunidades.",
+      "C": "Cobrar taxas adicionais não informadas na contratação.",
+      "D": "Substituir a necessidade de atendimento durante a venda.",
+      "E": "Ser realizada apenas uma vez, no primeiro mês após a venda."
+    },
+    "correct_answer": "B",
+    "explanation": "O pós-venda consiste em acompanhar o cliente após a contratação de um produto, garantindo sua satisfação, esclarecendo dúvidas e identificando novas oportunidades — uma etapa fundamental para a fidelização."
+  },
+  {
+    "discipline": "Vendas e Negociação",
+    "topic": "Vendas e Negociação",
+    "statement": "Adaptar a abordagem comercial conforme o perfil e o momento de vida de cada cliente (por exemplo, jovem iniciando a vida financeira ou aposentado buscando segurança) é uma prática relacionada a:",
+    "options": {
+      "A": "Padronização obrigatória do atendimento.",
+      "B": "Segmentação e personalização do atendimento comercial.",
+      "C": "Cross-selling exclusivamente.",
+      "D": "Auditoria interna do banco.",
+      "E": "Compliance regulatório."
+    },
+    "correct_answer": "B",
+    "explanation": "Segmentar clientes por perfil, momento de vida e necessidades permite personalizar a abordagem comercial, oferecendo produtos e argumentos mais relevantes para cada grupo — uma prática central em vendas consultivas."
+  },
+  {
+    "discipline": "Vendas e Negociação",
+    "topic": "Vendas e Negociação",
+    "statement": "Diante de uma reclamação formal de um cliente, a conduta mais adequada, do ponto de vista comercial, é:",
+    "options": {
+      "A": "Ignorar a reclamação até que o cliente desista.",
+      "B": "Tratar a reclamação como uma oportunidade de reverter a insatisfação e reforçar a confiança do cliente na instituição.",
+      "C": "Transferir automaticamente o cliente para outra agência.",
+      "D": "Responder de forma defensiva, culpando o próprio cliente pela situação.",
+      "E": "Encerrar a conta do cliente imediatamente."
+    },
+    "correct_answer": "B",
+    "explanation": "Uma reclamação bem conduzida pode se transformar em uma oportunidade de reverter a insatisfação e fortalecer a confiança do cliente na instituição."
+  },
+  {
+    "discipline": "Vendas e Negociação",
+    "topic": "Vendas e Negociação",
+    "statement": "Ao buscar cumprir metas comerciais, é uma prática eticamente inadequada:",
+    "options": {
+      "A": "Oferecer produtos que atendam de fato às necessidades do cliente.",
+      "B": "Explicar com clareza os custos e condições de um produto antes da contratação.",
+      "C": "Induzir o cliente a contratar um produto que não atende às suas necessidades apenas para bater a meta do mês.",
+      "D": "Buscar entender o perfil do cliente antes de oferecer uma solução.",
+      "E": "Registrar de forma transparente as informações da venda."
+    },
+    "correct_answer": "C",
+    "explanation": "Induzir o cliente a contratar um produto inadequado às suas necessidades — só para cumprir uma meta — fere princípios éticos e de proteção ao consumidor, além de comprometer a relação de longo prazo com o cliente."
+  },
+  {
+    "discipline": "Vendas e Negociação",
+    "topic": "Vendas e Negociação",
+    "statement": "Ao dar um feedback a um colega de equipe sobre um erro no atendimento a um cliente, a abordagem mais construtiva é:",
+    "options": {
+      "A": "Criticar publicamente o colega na frente de outros clientes.",
+      "B": "Descrever o comportamento observado de forma objetiva, seu impacto, e sugerir uma melhoria, em um momento e local apropriados.",
+      "C": "Evitar comentar o erro, para não gerar desconforto.",
+      "D": "Enviar uma mensagem genérica para toda a equipe, sem identificar o problema específico.",
+      "E": "Aguardar a avaliação anual de desempenho para comentar o ocorrido."
+    },
+    "correct_answer": "B",
+    "explanation": "Um feedback construtivo deve ser específico, objetivo e dado em um momento e local apropriados, descrevendo o comportamento observado e seu impacto, sem ataques pessoais."
+  }
+]
